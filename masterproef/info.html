@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour 2.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Automatische testbed monitoring voor jFed - Fed4Fire - Info</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+	</head>
+	<body class="no-sidebar">
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							<!-- Header -->
+								<header id="header">
+									<div class="inner">
+										<!-- Logo -->
+											<h1><a href="index.html" id="logo">Home</a></h1>
+										<!-- Nav -->
+											<nav id="nav">
+												<ul>
+													<li><a href="info.html">Info</a></li>
+													<li>
+														<span>Documenten</span>
+														<ul>
+															<li><a href="docs/eersteVoorstel.pdf">Eerste voorstel</a></li>
+															<li><a href="docs/UitgebreidVoorstel.pdf">Uitgebreid voorstel</a></li>
+															<li><a href="docs/scriptie.pdf">Scriptie</a></li>
+															<li><a href="https://github.com/AndreasDL/Tiwi-Masterproef2013-2014">source</a></li>
+														</ul>
+													</li>
+													<li>
+														<span>References</span>
+														<ul>
+															<li><a href="docs/SFA2.0.pdf">Slice-Based Federation Architecture</a></li>
+															<li><a href="http://doc.fed4fire.eu/">fed4fire Doc</a></li>
+															<li><a href="http://jfed.iminds.be/">jFed webstart</a></li>
+														</ul>
+													</li>
+													<li><a href="logboek.php">Logboek</a></li>
+													<li><a href="contact.html">Contact</a></li>
+												</ul>
+											</nav>
+									</div>
+								</header>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Main Wrapper -->
+			<div id="main-wrapper" align = center>
+				<div class="main-wrapper-style2">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="12u skel-cell-important">
+									<div id="content">
+										<!-- Content -->
+											<article>
+												<header class="major">
+													<h2>Automatische testbed monitoring voor jFed - Fed4Fire</h2>
+													<span class="byline">Een masterproef door  Andreas De Lille</span>
+													<a href="http://fed4fire.eu/"><img src="http://jfed.iminds.be/img/fed4fire.png"/></a>
+													<a href="http://www.iminds.be/nl"><img src="http://jfed.iminds.be/img/iminds.png" /></a>
+													<a href="http://www.ugent.be/"><img src="http://jfed.iminds.be/img/ugent.png" /></a>
+												</header>
+												<h3>Een inleiding</h3>
+												<p align=left>
+Het gebruik van netwerken en het internet om computers en allehande randapperatuur te verbinden zal in de toekomst alleen maar stijgen. Het is dan ook van groot belang dat onderzoek op dit gebied vlot en correct verloopt en dat onderzoekers samenwerken om zo ideeën en nieuwe technologieën te delen. Daarnaast moeten er ook testfaciliteiten zijn om deze nieuwe technologieën te testen.
+FIRE (Future Internet Research and Experimentation) is een Europees onderzoeksprogramma dat zich op deze doelen richt.
+</br></br>
+Om de configuratie en de werking van de verschillende testbeds gelijk te maken, is de federation architectuur ontworpen. De invoering hiervan zit in het Fed4FIRE (Federation for FIRE) project. De federation architectuur die in deze masterproef behandeld wordt, is SFA 2.0 (Slice-federation-architecture). Hierbij vormen alle testbeds van FIRE een federatie. Daardoor hebben onderzoekers binnen FIRE toegang tot alle testbeds binnen FIRE.
+</br></br>
+Het beheer van al deze verschillende testbeds is geen sinecure. Om dit beheer te vereenvoudigen is er binnen IBCN (Internet Based Communication Networks and Services), een onderdeel van het onderzoekscentrum iMinds, een monitoringsservice gemaakt. Deze service controleert periodiek of de SFA-API nog werkt. Echter door zijn snelle ontwikkeling is de service niet voorzien op uitbreidingen.
+</br></br>
+FIRE werkt samen met een gelijkaardig project, GENI. GENI (Global Environment for Network Innovations) is een Amerikaans project met gelijkaardige doelstellingen als FIRE. GENI is ook bezig met de ontwikkeling van een monitoringssysteem dat echter meer de nadruk legt op het monitoren van experimenten. De samenwerking tussen beide projecten kan bevorderd worden als beide monitoringssystemen compatibel zijn.
+</br></br>
+De opdracht van deze masterproef bestaat uit 3 grote delen. 
+Het eerste deel is het maken van een API die monitoringsdata beschikbaar maakt voor andere applicaties. Het tweede deel is een monitoringsservice maken die testbeds controleert. Het derde en laatste deel is de monitoringsservice uitbereiden om loadtesten uit te voeren. Met deze loadtesten wordt bekeken welke lading een testbed kan afhandelen.
+												</p>
+												<h3 >begeleiders</h3>
+													<table>
+														<tr><td><h3>Functie</h3></td><td><h3>Naam</h3></td></tr>
+														<tr><td>Interne Promotor</td><td>Geert Van hoogenbemt</td></tr>
+														<tr><td>Externe Promotor</td><td>Piet Demeester</td></tr>
+														<tr><td>Begeleider</td><td>Brecht Vermeulen</td></tr>
+														<tr><td>Begeleider</td><td>Wim Van de Meerssche</td></tr>
+														<tr><td>Begeleider</td><td>Thijs Walcarius</td></tr>
+														<tr><td>Begeleider</td><td>Wim Vandenberghe</td></tr>
+													</table>
+													</br></br>
+											</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row" align=center>
+						<div class="4u">
+							<!-- Links -->
+								<section>
+									<h2>Organisatie</h2>
+									<ul class="style2">
+										<li><a href="http://www.iminds.be/nl">iMinds</a></li>
+										<li><a href="http://www.ibcn.intec.ugent.be/">ibcn</a></li>
+									</ul>
+								</section>
+						</div>
+						<div class="4u">
+							<!-- Links -->
+								<section>
+									<h2>Project</h2>
+									<ul class="style2">
+										<li><a href="http://www.ict-fire.eu/home.html">FIRE</a></li>
+										<li><a href="http://www.geni.net/">GENI</a></li>
+										<li><a href="http://fed4fire.eu/">Fed4FIRE</a></li>
+									</ul>
+								</section>
+						</div>
+						<div class="4u">
+								<!-- Links -->
+								<section>
+									<h2>School</h2>
+									<ul class="style2">
+										<li><a href="http://tiwi.ugent.be/">Tiwi</a></li>
+										<li><a href="http://www.ugent.be/">uGent</a></li>
+									</ul>
+								</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								&copy; Untitled. All rights reserved | Images: <a href="http://fotogrph.com/">fotogrph</a> | Design: <a href="http://html5up.net/">HTML5 UP</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+	</body>
+</html>
